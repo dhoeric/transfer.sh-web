@@ -67,10 +67,6 @@ $(document).ready(function() {
 
                 files.push(URI(xhr.responseText.replace('\n', '')).path());
 
-                $('.download-zip').attr('href', URI('(' + files.join(',') + ').zip').absoluteTo(location.href).toString());
-                $('.download-tar').attr('href', URI('(' + files.join(',') + ').tar.gz').absoluteTo(location.href).toString());
-
-                $('.all-files').addClass('show');
             }
         };
 
